@@ -51,7 +51,8 @@ color="#1279be" size="16px"] {{i.Name}}<br/>
         font-weight:300;">
     [minti_icon icon="fa-clock-o" 
     color="#1279be" size="16px"] 
-    {{i.OccurrenceStartTime | date("g:ia") }} - {{i.OccurrenceEndTime | date("g:ia") }} ({{i.StatusDescription}})
+    <!-- {{i.OccurrenceStartTime | date("g:ia") }} - {{i.OccurrenceEndTime | date("g:ia") }} ({{i.StatusDescription}}) -->
+    {{i.OccurrenceStartTime | date("g:ia") }} - {{i.OccurrenceEndTime | date("g:ia") }}
 </span>
 </td>
 </tr>
