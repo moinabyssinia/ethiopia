@@ -1,0 +1,17 @@
+    <h1 id = "salute" 
+        style = "text-align: center; 
+                font-size: 80px;
+                margin: 200px 0 0 0;">
+    </h1>
+
+    <script>
+        const greet = document.querySelector('#salute');
+        if(dHr < 12){
+            greet.textContent = "Good Morning!"
+        } else if((dHr >= 12) & (dHr <19)){
+           greet.textContent = "Good Afternoon!";
+        } else if((dHr >= 19) & (dHr <=23)){
+           greet.textContent = "Good Evening!";
+        }
+
+    </script>

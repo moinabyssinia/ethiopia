@@ -1,0 +1,18 @@
+<h2 style = "font-size: 40px;"></h2>
+
+<script>
+ const h2 = document.querySelector('h2');
+ const dObj = new Date();
+ let dHr = dObj.getHours();
+ let dMin = dObj.getMinutes();
+
+ if (Number(dHr) < 10){
+  dHr = "0"+ dHr;
+ }
+
+ if (Number(dMin) < 10){
+  dMin = "0"+ dMin;
+ }
+
+ h2.textContent = `${dHr}:${dMin}`;
+</script>
