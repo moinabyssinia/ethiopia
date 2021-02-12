@@ -5,14 +5,25 @@
  const dObj = new Date();
  let dHr = dObj.getHours();
  let dMin = dObj.getMinutes();
+ let amPm = 'AM';
 
- if (Number(dHr) < 10){
+if (Number(dHr) < 10){
   dHr = "0"+ dHr;
- }
+    } 
+else if (Number(dHr) > 12){
+    dHr = dHr - 12;
+    if (Number(dHr) < 10){
+        dHr = "0"+ dHr;
+    }
+    amPm = 'PM';
+    }
+else if (Number(dHr) == 12){
+    amPm = 'PM';
+    }
 
  if (Number(dMin) < 10){
   dMin = "0"+ dMin;
  }
 
- h2.textContent = `${dHr}:${dMin}`;
+ h2.textContent = `${dHr}:${dMin} ${amPm}`;
 </script>

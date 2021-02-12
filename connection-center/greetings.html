@@ -6,12 +6,15 @@
 
     <script>
         const greet = document.querySelector('#salute');
-        if(dHr < 12){
+        if(amPm == "AM"){
             greet.textContent = "Good Morning!"
-        } else if((dHr >= 12) & (dHr <19)){
-           greet.textContent = "Good Afternoon!";
-        } else if((dHr >= 19) & (dHr <=23)){
-           greet.textContent = "Good Evening!";
-        }
+        } else if(amPm == "PM"){
+            if (dHr >= '06'){
+                greet.textContent = "Good Evening!";
+            }  
+            else{
+                greet.textContent = "Good Afternoon!";
+            } 
+        } 
 
     </script>
