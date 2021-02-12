@@ -1,6 +1,7 @@
 [minti_table style="3"]</p>
 <table width="100%" 
-    style="text-align: left; 
+    style="
+    text-align: left; 
     border:3px solid black; 
     border-radius: 5px; 
     order-collapse:initial;">
