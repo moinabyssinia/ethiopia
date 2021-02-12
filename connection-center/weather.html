@@ -1,11 +1,36 @@
  <!add weather icons>   
- <h2 id="temp" style = "text-align: end; font-size: 40px;"></h2>
- <img src="" alt="">
+ <div class="weather">
+    <div class="icon">
+        <img class="weather-icon" src="" alt="">
+    </div>
+    <div class="temp-degree">
+        <h2 id="temp" style = "text-align: end; font-size: 40px;"></h2>
+    </div>
+
+    <style>
+        .weather {
+            display: flex;
+            float: right;
+            width: 30%;
+        }
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #temp{
+            margin-bottom: 0;
+        }
+    </style>
+
+
+</div>
 
 
     <script>
         const tempDOM = document.querySelector("#temp")
-        const weatherIcon = document.querySelector('img');
+        const weatherIcon = document.querySelector('.weather-icon');
 
         function weatherBalloon( cityID ) {
             var key = 'a8353329c6bbbccb6f45a86e43d49b1d';
@@ -24,12 +49,13 @@
                 const fahrenheit = Math.round(data.main.temp);
                 tempDOM.innerHTML = fahrenheit+'&deg';
             }
-        
+
         //get icon
         const getIcon = (data) => {
             const iconText = data.weather[0].icon;
-            //weatherIcon.src = `http://openweathermap.org/img/w/${iconText}.png`;
-            weatherIcon.src = `http://openweathermap.org/img/w/03d.png`;
+            console.log(iconText);
+            weatherIcon.src = `http://openweathermap.org/img/w/${iconText}.png`;
+            //weatherIcon.src = `http://openweathermap.org/img/w/03d.png`;
         }
 
         const temperature = weatherBalloon(4167147);
