@@ -1,0 +1,15 @@
+.weather {
+    display: flex;
+    float: left;
+    width: 30%;
+    text-align: end;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#temp{
+    margin-bottom: 0;
+}
