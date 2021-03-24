@@ -1,0 +1,23 @@
+
+
+.navbar h1 {
+    color: white;
+    background: rgb(23, 24, 51);
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+th {
+    width: 400px;
+    height: 60px;
+    background-color: rgb(177, 179, 164);
+}
+td {
+    display: table-cell;
+    width: 400px;
+    text-align: center;
+    height: 40px;
+    background-color: gray;
+}
